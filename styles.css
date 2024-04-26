@@ -209,7 +209,7 @@ body * {
 
     #mobile-nav {
     position: fixed; /* Ensure the dropdown menu is also fixed */
-    top: 144px; /* Adjust this value based on the height of the navigation bar */
+    top: 44px; /* Adjust this value based on the height of the navigation bar */
     width: 100%; /* Match the width to fill screen */
     background-color: #FFFFFF;
 
