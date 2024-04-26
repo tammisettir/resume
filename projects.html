@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-none">HOME</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#chatgpt" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CHATGPT</a>
+        <a href="#powerbi" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">POWERBI</a>
+        <a href="#tableau" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">TABLEAU</a>
+        <a href="#streamlit" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">STREAMLIT</a>
+        
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="images/profile.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="mailto:ramya.tammisetti@gmail.com" target="_blank">
+             <i data-feather="mail"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/ramya-tammisettimohan/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="images/resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>          
+          <a href="#chatgpt" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CHATGPT</a>
+          <a href="#powerbi" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">POWERBI</a>
+          <a href="#tableau" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">TABLEAU</a>
+          <a href="#streamlit" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">STREAMLIT</a>
+
+        </div>
+        <div class="content-container w3-margin-top-2">
+
+          <!--STREAMLIT SECTION-->
+          <div id="streamlit" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">STREAMLIT</h2>
+            <p class="w3-margin-top-2"> 
+              <iframe
+            src="https://uscovid19.streamlit.app/?embed=true"
+            height="450"
+            width="100%"
+            style={{ width: "100%", border: "none" }}
+            ></iframe>
+            </p>
+            <p class=""> 
+              The app above was created using the Streamlit library in Python to visualize the number of COVID-19 cases and deaths over time. The app can be used to compare rates of cases/deaths of up to ten different states against each other.
+            </p>
+          </div>
+
+          <!--TABLEAU SECTION-->
+          <div id="tableau" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">TABLEAU</h2>
+            <p class="w3-margin-top-2"> 
+              <img src="images/Titanic_Screenshot.png" width="100%" height="100%"></img>
+            </p>
+            <p class=""> 
+              Above is a chart showing the number of people on the Titanic – the total number onboard, the number who died, and the number saved. The people are categorized by color into Crew, First Class, Second Class, and Third Class, and are stacked in the bar left to right as Men, Women and Children.
+            </p>
+          </div>
+
+
+          <!--POWERBI SECTION-->
+          <div id="powerbi" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">POWER BI</h2>
+            <p class="w3-margin-top-2"> 
+              <iframe src="images/NYC_Collisions.pdf" width="650" height="450"></iframe>
+            </p>
+            <p class=""> 
+              Above is a dashboard created in PowerBI depicting the collision data of NYC, from Jan 1, 2021 through Apr 9, 2023. The collision data depicts date, time, location, contributing factor, and vehicle type and is interactive – changing the filters will show only the data that fits the selected criteria.
+
+              *PowerBI cannot be hosted on this website, so what is shown above are screenshots of the dashboard. If you want to check out the interactive aspect, please click the button below to download the file
+            </p>
+          </div>
+
+          <!--CHATGPT SECTION-->
+          <div id="chatgpt" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CHATGPT</h2>
+            <p class="w3-margin-top-2"> 
+              <video width="640" height="480" controls>
+              <source src="images/sortinghat_resized.mov" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </p>
+            <p class=""> 
+              ChatGPT was used to create an interactive sorting hat - the first question relates to age because the questions that follow are age relative. The questions are situation based, with the user having to type in their response and why, with the AI then breaking down your response into the house traits. 
+            </p>
+            <p class=""> 
+              As most people are a blend of characteristics, the Sorting Hat will sort you once you are 'provably' 40% in a single house. It will also give you a breakdown of the percentages for other houses. I'm a Ravenclaw, click here to test yourself!
+            </p>
+          </div>
+
+
+
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
