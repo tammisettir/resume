@@ -190,3 +190,27 @@ body * {
       display: inline-block;
     }
   }
+
+.top-nav {
+  position: fixed; /* Fixed positioning */
+  width: 72%;
+  top: 0;
+  z-index: 1000; /* Higher z-index to ensure it stays on top of other content */
+  background-color: #FFFFFF;
+}
+
+  .mobile-nav {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Align to the top */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Keep it on top of other content */
+    background-color: #FFFFFF;
+  }
+
+    #mobile-nav {
+    position: fixed; /* Ensure the dropdown menu is also fixed */
+    top: 44px; /* Adjust this value based on the height of the navigation bar */
+    width: 100%; /* Match the width to fill screen */
+    z-index: 999; /* Slightly lower than the nav bar to stack properly */
+  }
+
